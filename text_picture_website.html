@@ -7,10 +7,10 @@
       <script src="site.js" type="text/javascript"></script>
 
           <div id="tab_bar">
-              <button class ="tabs"  onclick="SwitchTab(event,'the end','book','tabs');">The end</button>
-              <button class ="tabs"  onclick="SwitchTab(event,'the beginning','book','tabs');">The beginning</button>
-              <button class ="tabs"  onclick="SwitchTab(event,'how to cook','book','tabs');">How to cook</button>
-              <button class ="tabs"  onclick="SwitchTab(event,'incredible facts','book','tabs');">Incredible facts</button>
+              <button class ="tabs" id="The end" onclick="SwitchTab(event,'the end','book','tabs');">The end</button>
+              <button class ="tabs" id="The beginning" onclick="SwitchTab(event,'the beginning','book','tabs');">The beginning</button>
+              <button class ="tabs" id="How to cook" onclick="SwitchTab(event,'how to cook','book','tabs');">How to cook</button>
+              <button class ="tabs" id="Increadible facts" onclick="SwitchTab(event,'incredible facts','book','tabs');">Incredible facts</button>
           </div>
 <script type="text/view" id="Books">
 <div id="incredible facts" class="book">
@@ -38,7 +38,7 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
-  <button class= "next_page" onclick = "change_view('incredible facts','page',3);">  Next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('incredible facts','page',3);">  Next_page </button>
   </div>
 
   <div id="p1" class="page">
@@ -64,7 +64,7 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
-      <button class= "next_page" onclick = "change_view('incredible facts','page',5);">  Next_page </button>
+      <button class= "next_page" id="nex_page"onclick = "change_view('incredible facts','page',5);">  Next_page </button>
   </div>
 
   <div id="p2" class="page">
@@ -92,7 +92,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('incredible facts','page',7);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('incredible facts','page',7);">  next_page </button>
   </div>
 
   <div id="end" class="page">
@@ -128,7 +128,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
-  <button class= "next_page" onclick = "change_view('the end','page',3);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the end','page',3);">  next_page </button>
   </div>
 
   <div id="p1" class="page">
@@ -156,7 +156,7 @@
 <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
 <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
   </div>
-  <button class= "next_page" onclick = "change_view('the end','page',5);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the end','page',5);">  next_page </button>
 </div>
 
 <div id="p2" class="page">
@@ -184,7 +184,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('the end','page',7);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the end','page',7);">  next_page </button>
   </div>
   <div id="p3" class="page">
   <div id = "center" >
@@ -211,7 +211,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('the end','page',9);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the end','page',9);">  next_page </button>
   </div>
   <div id="p4" class="page">
   <div id = "center" >
@@ -238,7 +238,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('the end','page',11);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the end','page',11);">  next_page </button>
   </div>
   <div id="p5" class="page">
   <div id = "center" >
@@ -265,7 +265,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('the end','page',13);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the end','page',13);">  next_page </button>
   </div>
   <div id="p6" class="page">
   <div id = "center" >
@@ -292,7 +292,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('the end','page',15);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the end','page',15);">  next_page </button>
   </div>
   <div id="p7" class="page">
     <div id = "center" >
@@ -319,13 +319,13 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       </div>
-      <button class= "next_page" onclick = "change_view('the end','page',17);">  next_page </button>
+      <button class= "next_page" id="nex_page" onclick = "change_view('the end','page',17);">  next_page </button>
 
   </div>
   <div id="end" class="page">
     <div id = "center" >
       <p>wow slut </p>
-      <button class= "go_first_page" onclick = "change_view('the end','page',1);">  go_first_page </button>
+      <button class= "go_first_page" id="first_page" onclick = "change_view('the end','page',1);">  go_first_page </button>
     </div>
   </div>
 </div>
@@ -360,7 +360,7 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
-  <button class= "next_page" onclick = "change_view('the beginning','page',3);">  Next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the beginning','page',3);">  Next_page </button>
   </div>
 
   <div id="p1" class="page">
@@ -386,7 +386,7 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
-      <button class= "next_page" onclick = "change_view('the beginning','page',5);">  Next_page </button>
+      <button class= "next_page" id="nex_page" onclick = "change_view('the beginning','page',5);">  Next_page </button>
   </div>
   <div id="p2" class="page">
   <div id = "center" >
@@ -413,7 +413,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('the beginning','page',7);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the beginning','page',7);">  next_page </button>
   </div>
   <div id="p3" class="page">
   <div id = "center" >
@@ -440,7 +440,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('the beginning','page',9);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the beginning','page',9);">  next_page </button>
   </div>
   <div id="p4" class="page">
   <div id = "center" >
@@ -467,7 +467,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('the beginning','page',11);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('the beginning','page',11);">  next_page </button>
   </div>
   <div id="p5" class="page">
     <div id = "center" >
@@ -494,13 +494,13 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       </div>
-      <button class= "next_page" onclick = "change_view('the beginning','page',13);">  next_page </button>
+      <button class= "next_page" id="nex_page" onclick = "change_view('the beginning','page',13);">  next_page </button>
 
   </div>
   <div id="end" class="page">
     <div id = "center" >
       <p>wow slut </p>
-      <button class= "go_first_page" onclick = "change_view('the beginning','page',1);">  go_first_page </button>
+      <button class= "go_first_page" id="first_page" onclick = "change_view('the beginning','page',1);">  go_first_page </button>
     </div>
   </div>
 </div>
@@ -533,7 +533,7 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
-  <button class= "next_page" onclick = "change_view('how to cook','page',3);">  Next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('how to cook','page',3);">  Next_page </button>
   </div>
 
   <div id="p1" class="page">
@@ -559,7 +559,7 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
-      <button class= "next_page" onclick = "change_view('how to cook','page',5);">  Next_page </button>
+      <button class= "next_page" id="nex_page" onclick = "change_view('how to cook','page',5);">  Next_page </button>
   </div>
   <div id="p2" class="page">
   <div id = "center" >
@@ -586,7 +586,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('how to cook','page',7);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('how to cook','page',7);">  next_page </button>
   </div>
   <div id="p3" class="page">
   <div id = "center" >
@@ -613,7 +613,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('how to cook','page',9);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('how to cook','page',9);">  next_page </button>
   </div>
   <div id="p4" class="page">
   <div id = "center" >
@@ -640,7 +640,7 @@
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
     </div>
-  <button class= "next_page" onclick = "change_view('how to cook','page',11);">  next_page </button>
+  <button class= "next_page" id="nex_page" onclick = "change_view('how to cook','page',11);">  next_page </button>
   </div>
   <div id="p5" class="page">
     <div id = "center" >
@@ -667,13 +667,13 @@
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       <p> hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej hej</p>
       </div>
-      <button class= "next_page" onclick = "change_view('how to cook','page',13);">  next_page </button>
+      <button class= "next_page" id="nex_page" onclick = "change_view('how to cook','page',13);">  next_page </button>
 
   </div>
   <div id="end" class="page">
     <div id = "center" >
       <p>wow slut </p>
-      <button class= "go_first_page" onclick = "change_view('how to cook','page',1);">  go_first_page </button>
+      <button class= "go_first_page" id="first_page" onclick = "change_view('how to cook','page',1);">  go_first_page </button>
     </div>
   </div>
 
