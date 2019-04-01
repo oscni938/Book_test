@@ -1,0 +1,33 @@
+#tab_bar{
+width: 100%;
+height: 40px;
+margin-top: 100px;
+border-top: 3px solid #7B7B7B;
+border-bottom: 3px solid #7B7A7B;
+background-color:#95be9d;
+
+
+}
+
+.tabcontent{
+display: none;
+border-top: none;
+width: inherit;
+height: 100%;
+width: 100%;
+
+}
+#tab_bar .tabs{
+background-color: inherit;
+height: inherit;
+margin-left: auto;
+margin-right: auto;
+border: none;
+outline: none;
+width: 12%;
+float:right;
+margin-top: auto;
+cursor: pointer;
+color: #000000;
+text-shadow: 5px 5px 10px black;
+}
