@@ -5,6 +5,7 @@ if('serviceWorker' in navigator)
   {
     var d = new Date();
     var t= d.getTime();
+    t='date:'+t+'rand:'+ Math.random();
     sendTimeToFirstPaint(t);
     sendTimePageLoadTime(t);
 navigator.serviceWorker
@@ -25,6 +26,7 @@ else
     // Sends an event with the time to first paint data.
     var d = new Date();
     var t= d.getTime();
+    t='date:'+t+'rand:'+ Math.random();
     sendTimeToFirstPaint(t);
     sendTimePageLoadTime(t);
     sendServiceWorkerStatus(t);
