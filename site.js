@@ -43,6 +43,24 @@ window.onload = function(){
   change_view("the end",'page',1);
 }
 
+  window.addEventListener('offline', () =>
+  {
+   analytics.track('Video site', {
+  category: 'online status',
+  label: 'offline',
+  value: 1
+    );
+  });
+   
+  window.addEventListener('online', () =>
+  {
+   analytics.track('Video site', {
+  category: 'online status',
+  label: 'online',
+  value: 1
+    );
+  });
+
 change_view = function(book,type,page){
   //var text = document.getElementById(val).innerHTML;
   window.scroll(0, 0);
