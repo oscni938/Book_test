@@ -49,16 +49,15 @@ window.onload = function(){
   category: 'online status',
   label: 'offline',
   value: 1
-    );
   });
-   
+  });
   window.addEventListener('online', () =>
   {
    analytics.track('Video site', {
   category: 'online status',
   label: 'online',
   value: 1
-    );
+  });
   });
 
 change_view = function(book,type,page){
