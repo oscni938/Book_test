@@ -65,7 +65,7 @@ self.addEventListener('activate',(e) =>
 //call fetch
 self.addEventListener('fetch', e =>
 {
-  if(e.request.mode === 'navigate'){
+  /*if(e.request.mode === 'navigate'){
    e.waitUntil(
       caches
         .open(cacheName)
@@ -76,7 +76,7 @@ self.addEventListener('fetch', e =>
         })
         .then(() => self.skipWaiting())
     );
-  }
+  }*/
   console.log("service worker: fetching");
   /*e.respondWith(
     fetch(e.request).catch(() => caches.match(e.request))
