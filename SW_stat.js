@@ -77,10 +77,7 @@ self.addEventListener('fetch', e =>
         .then(() => self.skipWaiting())
     );
   }
-  caches.open("precache-v2")
-  .then(function(cache) {
-          cache.add('wow.jpeg');
-  })
+
   console.log("service worker: fetching");
   /*e.respondWith(
     fetch(e.request).catch(() => caches.match(e.request))
