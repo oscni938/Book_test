@@ -54,7 +54,7 @@ self.addEventListener('activate',(e) =>
             if (cache != cacheName)
             {
               console.log("service worker: clearing old cache");
-              return caches.delete(cache);
+           //   return caches.delete(cache);
             }
           })
         )
@@ -65,7 +65,7 @@ self.addEventListener('activate',(e) =>
 //call fetch
 self.addEventListener('fetch', e =>
 {
-  /*if(e.request.mode === 'navigate'){
+  if(e.request.mode === 'navigate'){
    e.waitUntil(
       caches
         .open(cacheName)
@@ -76,7 +76,11 @@ self.addEventListener('fetch', e =>
         })
         .then(() => self.skipWaiting())
     );
-  }*/
+  }
+  caches.open("precache-v2")
+  .then(function(cache) {
+          cache.add('wow.jpeg');
+  })
   console.log("service worker: fetching");
   /*e.respondWith(
     fetch(e.request).catch(() => caches.match(e.request))
